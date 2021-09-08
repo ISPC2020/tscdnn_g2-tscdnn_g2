@@ -5,6 +5,12 @@ Created on Wed Sep  8 18:15:03 2021
 @author: CarinaG
 """
 
+# Import packages
+import h5py
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+
 
 # Import training dataset
 train_dataset = h5py.File("../data/train_catvnoncat.h5")
