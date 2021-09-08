@@ -11,13 +11,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
+import funcion_cost_gradient as fcg
+import funcion_feed_forward as fff
+import funcion_initialization_activation as fi
+import funcion_layers as fl
+
+
 
 # Import training dataset
-train_dataset = h5py.File("../data/train_catvnoncat.h5")
+train_dataset = h5py.File("data/train_catvnoncat.h5")
 X_train = np.array(train_dataset["train_set_x"])
 y_train = np.array(train_dataset["train_set_y"])
 
-test_dataset = h5py.File("../data/test_catvnoncat.h5")
+test_dataset = h5py.File("data/test_catvnoncat.h5")
 X_test = np.array(test_dataset["test_set_x"])
 y_test = np.array(test_dataset["test_set_y"])
 
