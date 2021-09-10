@@ -1,4 +1,12 @@
+# Import packages
+import h5py
+import numpy as np
+import seaborn as sns
+from function_initialization_activation import * # importo la libreria el * identifica todas las funciones del file
+
+
 # Define helper functions that will be used in L-model forward prop
+
 def linear_forward(A_prev, W, b):
     """
     Computes affine transformation of the input.

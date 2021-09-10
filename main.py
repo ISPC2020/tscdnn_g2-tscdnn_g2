@@ -10,13 +10,10 @@ import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-
-import funcion_cost_gradient as fcg
-import funcion_feed_forward as fff
-import funcion_initialization_activation as fi
-import funcion_layers as fl
-
-
+from function_initialization_activation import * # importo la libreria el * identifica todas las funciones del file
+from function_feed_forward import *
+from function_cost_gradient import *
+from function_layers import *
 
 # Import training dataset
 train_dataset = h5py.File("data/train_catvnoncat.h5")

@@ -1,16 +1,20 @@
 # Import packages
 import os as os
-
 import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
+from function_initialization_activation import * # importo la libreria el * identifica todas las funciones del file
+from function_feed_forward import *
+from function_cost_gradient import *
 
 # %matplotlib inline
 sns.set_context("notebook")
 plt.style.use("fivethirtyeight")
 
 
+    
 # Define the multi-layer model using all the helper functions we wrote before
 def L_layer_model(
         X, y, layers_dims, learning_rate=0.01, num_iterations=3000,

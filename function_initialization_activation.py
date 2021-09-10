@@ -1,3 +1,9 @@
+# Import packages
+import numpy as np
+import seaborn as sns
+
+
+
 def initialize_parameters(layers_dims):
     """
     Initialize parameters dictionary.
@@ -33,6 +39,8 @@ def initialize_parameters(layers_dims):
 
 #--------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------
+
+
 # Define activation functions that will be used in forward propagation
 def sigmoid(Z):
     """

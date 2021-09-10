@@ -1,3 +1,11 @@
+# Import packages
+import h5py
+import numpy as np
+import seaborn as sns
+# IMPORTO DE LIBRERIA PROPIA
+from function_feed_forward import *
+
+        
 def compute_cost(AL, y):
     """
     Computes the binary Cross-Entropy cost.
@@ -15,9 +23,7 @@ def compute_cost(AL, y):
         binary cross-entropy cost.
     """
     m = y.shape[1]              
-    cost = - (1 / m) * np.sum(
-        np.multiply(y, np.log(AL)) + np.multiply(1 - y, np.log(1 - AL)))
-
+    cost = - (1 / m) * np.sum(np.multiply(y, np.log(AL)) + np.multiply(1 - y, np.log(1 - AL)))
     return cost
 
 # Define derivative of activation functions w.r.t z that will be used in back-propagation
