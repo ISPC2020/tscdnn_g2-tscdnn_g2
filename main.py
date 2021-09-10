@@ -11,10 +11,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-import funcion_cost_gradient as fcg
-import funcion_feed_forward as fff
-import funcion_initialization_activation as fi
-import funcion_layers as fl
+from funcion_cost_gradient import *
+from funcion_feed_forward import *
+from funcion_initialization_activation import *
+from funcion_layers import * 
 
 
 
