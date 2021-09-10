@@ -3,7 +3,6 @@ import numpy as np
 import seaborn as sns
 
 
-
 def initialize_parameters(layers_dims):
     """
     Initialize parameters dictionary.

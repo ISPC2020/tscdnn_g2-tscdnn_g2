@@ -6,7 +6,7 @@ import numpy as np
 import seaborn as sns
 
 from function_initialization_activation import * # importo la libreria el * identifica todas las funciones del file
-from function_feed_forward import *
+from function_feed_forward import * # capaz que no hace falta
 from function_cost_gradient import *
 
 # %matplotlib inline
