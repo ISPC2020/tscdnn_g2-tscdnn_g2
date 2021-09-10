@@ -5,7 +5,6 @@ import seaborn as sns
 # IMPORTO DE LIBRERIA PROPIA
 from function_feed_forward import *
 
-        
 def compute_cost(AL, y):
     """
     Computes the binary Cross-Entropy cost.

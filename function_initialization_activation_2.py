@@ -39,6 +39,12 @@ def initialize_parameters(layers_dims):
 #--------------------------------------------------------------------------------
 
     # COMO IMPORTAMOS LA CLASE Activation_Function que se encuentra en el archivo function_initializatiun_activation_2.py
+    # from function_initialization_activation_2 import Activation_Function as af
+    # importo funcion
+    # from function_cost_gradient import compute_cost 
+    # importo funcion de una clase
+    # from function_initialization_activation_2 import Activation_Function 
+
 
 #--------------------------------------------------------------------------------
 
@@ -47,7 +53,7 @@ class Activation_Function:
     def __init__(self, Z):
         self.Z = Z
 
-# Define activation functions that will be used in forward propagation
+    # Define activation functions that will be used in forward propagation
     
     def sigmoid(self):
         """
