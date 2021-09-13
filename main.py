@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
+
 from funcion_cost_gradient import *
 from funcion_feed_forward import *
 from funcion_initialization_activation import *
