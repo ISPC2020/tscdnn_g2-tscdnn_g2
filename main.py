@@ -10,10 +10,14 @@ import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-#from function_initialization_activation import * # importo la libreria el * identifica todas las funciones del file
-#from function_feed_forward import *
-#from function_cost_gradient import *
-from function_layers import *
+
+
+from funcion_cost_gradient import *
+from funcion_feed_forward import *
+from funcion_initialization_activation import *
+from funcion_layers import * 
+
+
 
 # Import training dataset
 train_dataset = h5py.File("data/train_catvnoncat.h5")
@@ -59,3 +63,11 @@ parameters_tanh = L_layer_model(
 
 # Print the accuracy
 accuracy(X_test, parameters_tanh, y_test, activation_fn="tanh")
+
+# NN with relu activation fn
+parameters_relu = L_layer_model(
+    X_train, y_train, layers_dims, learning_rate=0.03, num_iterations=3000,
+    hidden_layers_activation_fn="relu")
+
+# Print the accuracy
+accuracy(X_test, parameters_relu, y_test, activation_fn="relu")
